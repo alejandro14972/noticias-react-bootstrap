@@ -3,6 +3,7 @@ import "./style/noticias.css";
 import Encabezado from './components/Encabezado';
 import Noticias from './components/Noticias';
 import { noticias } from "./data/noticias";
+import Navegador from "./components/Navegador";
 
 console.log(noticias);
 
@@ -12,6 +13,7 @@ function App() {
 
     <div>
     <Encabezado />
+    <Navegador /> 
       <div className="container mt-5">
         <div className="row">
           {noticias.map(noticia => (
